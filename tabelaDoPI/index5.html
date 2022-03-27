@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="stylle2.css">
+  <link rel="stylesheet" href="stylle3.css">
+  <link rel="stylesheet" href="re.css">
+  <script src="https://use.fontawesome.com/6a7779b1d6.js"></script>
+  <script src="https://kit.fontawesome.com/8d7d9c90ad.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+
+  <title>Lista de Candidatos</title>
+
+</head>
+<body>
+     
+  <div class="wrapper">
+    <div class="sidebar">
+        <img src="acc.jpg"height="90"  class="im">
+        <ul>
+            <li><a href="index8.html"><i class="fas fa-home"></i>Dashboard</a></li>
+            <li><a href="index5.html"><i class="fas fa-user"></i>Lista de Candidatos</a></li>
+            <li><a href="index4.html"><i class="fas fa-address-card"></i>Processo de Recrutamento</a></li>
+            <li><a href="index7.html"><i class="fas fa-user"></i>Cadastro de Candidato</a></li>
+            
+        </ul> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+        
+        <button class="bu"><p class="s">Sair</p></button>
+    </div>
+
+    <div class="main_content">
+      <div class="header">Lista de Candidatos  <br>  
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </div>   
+    </div>  
+  </div>  
+
+  <div class="ta"> 
+  <table id="minhaTabela">
+    <thead>
+      <tr>
+        <th>CL Target</th>
+        <th class="cand">Nome do Candidato</th>
+        <th class="cand">Nome do Entrevistador</th>
+        <th class="cand">Localidade</th>
+        <th class="cand">Status </th>
+        <th class="cand">Data de Entrevista</th>
+        <th>Data de Contratação</th>
+        <th>Ultima Seleção</th>  
+        <th>Observações</th>
+        
+      </tr>
+    </thead>
+
+    <tbody> 
+      <tr class="t">
+        <td class="t">CL8/9</td>
+        <td class="t" >Aline Campos</td>
+        <td class="t">Gabriel Costa</td>
+        <td class="t">Salvador</td>
+        <td class="t"> <mark class="c4">Banco de Talentos</mark></td>
+        <td class="t">27/01/2020 </td>
+        <td class="t"> ---- </td>
+        <td class="t">Estágio DataScience</td>
+        <td class="t">Especialidade em SAP BO, PowerBI e ferramentas de DataViz </td>
+      </tr>
+
+      <tr>
+        <td class="t">CL02</td>
+        <td class="t">Maria Eduarda</td>
+        <td class="t">Ana Silva</td>
+        <td class="t">São Paulo</td>
+        <td class="t"> <mark>Contratado</mark></td>
+        <td class="t">11/04/2020 </td>
+        <td class="t">15/04/2020</td>
+        <td class="t">Estágio Bando de Dados</td>
+        <td class="t">Especialidade ferramentas de DataViz </td>
+      </tr>
+
+      <tr>
+        <td class="t">CL04</td>
+        <td class="t">Pedro Nascimento</td>
+        <td class="t">Gabriel Costa</td>
+        <td class="t">Fortaleza</td>
+        <td class="t"><mark class="c4">Banco de Talentos</mark></td>
+        <td class="t">27/01/2020</td>
+        <td class="t">------</td>
+        <td class="t"><mark class="c4">Estágio Bando de Dados</mark></td>
+        <td class="t">Especialidade em MySQL</td>
+      </tr>
+
+      <tr>
+        <td class="t">CL12</td>
+        <td class="t">João Paulo</td>
+        <td class="t">Gabriel Costa</td>
+        <td class="t">Rio de Janeiro</td>
+        <td class="t"><mark>Contratado</mark></td>
+        <td class="t">19/03/2021</td>
+        <td class="t">23/03/2021</td>
+        <td class="t">Estágio Frontend</td>
+        <td class="t">Especialidade em Typescript e React</td>
+      </tr>
+
+      <tr>
+        <td class="t">CL08</td>
+        <td class="t">Michele da Silva</td>
+        <td class="t">Ana Silva</td>
+        <td class="t">São Paulo</td>
+        <td class="t"><mark class="c3">Não Selecionado</mark></td>
+        <td class="t">16/05/2021</td>
+        <td class="t">------</td>
+        <td class="t" >Estágio Frontend</td>
+        <td class="t">Especialidade em React</td>
+      </tr>
+
+      <tr>
+        <td class="t">CL10</td>
+        <td class="t">Carla de Souza</td>
+        <td class="t">Hugo Santana</td>
+        <td class="t">Natal</td>
+        <td class="t"><mark class="c4">Banco de Talentos</mark></td>
+        <td class="t">20/08/2020</td>
+        <td class="t">------</td>
+        <td  class="t">Estágio Backend</td>
+        <td class="t">Especialidade em Nodejs e Java</td>
+      </tr>
+
+      <tr>
+        <td class="t">CL15</td>
+        <td class="t">Luan Albuquerque</td>
+        <td class="t">Paula Vicente</td>
+        <td class="t">Belo Horizonte</td>
+        <td class="t"><mark class="c3">Não Selecionado</mark></td>
+        <td class="t">02/07/2021</td>
+        <td class="t">------</td>
+        <td class="t"><mark class="c4">Banco de Talentos</mark></td>
+        <td class="t">Especialidade em PowerBI</td>
+      </tr>
+
+      <tr>
+        <td class="t">CL09</td>
+        <td class="t">José Aldo </td>
+        <td class="t">Gabriel Costa</td>
+        <td class="t">Recife </td>
+        <td class="t"> <mark>Contratado</mark></td>
+        <td class="t">04/10/2020</td>
+        <td class="t">11/10/2020 </td>
+        <td class="es">Estágio Banco de Dados</td>
+        <td class="ob" >Especialidade em SAP BO</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+      $('#minhaTabela').DataTable({
+        	"language": {
+                "lengthMenu": "Mostrando _MENU_ registros por página",
+                "zeroRecords": "Nada encontrado",
+                "info": "Mostrando página _PAGE_ de _PAGES_",
+                "infoEmpty": "Nenhum registro disponível",
+                "infoFiltered": "(filtrado de _MAX_ registros no total)",
+                "search": "Pesquisar",
+                "loadingRecords": "Carregando...",
+                "processing": "Processando...",
+                "paginate": {
+                "next": "Próximo",
+                "previous": "Anterior",
+                "first": "Primeiro",
+                "last": "Último"
+                }
+            }
+        });
+  });
+  </script>
+  
+</footer>
+</div>
+</div>
+</main>
+
+<script src="java.js" defer></script>
+</body>
+</html>
